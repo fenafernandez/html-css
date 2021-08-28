@@ -1,0 +1,19 @@
+#body {
+    position: relative;
+
+}
+.dad {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    background-color: blueviolet;
+}
+
+.son {
+
+    background-color: aqua;
+
+}
+
