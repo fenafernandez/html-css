@@ -1,18 +1,16 @@
-#body {
-    position: relative;
-
-}
 .dad {
     position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex-basis: 100%;
     background-color: blueviolet;
 }
 
 .son {
-
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-basis: 50%;
     background-color: aqua;
 
 }
