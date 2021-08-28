@@ -1,17 +1,24 @@
 .dad {
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    max-width: 50%;
+    height: 100%;
+    flex-wrap: nowrap;
     background-color: blueviolet;
+    border: 10px solid black;
+    text-align: center;
+    font-size: 3em;
 }
 
 .son {
+    box-sizing: border-box;
+    border: 10px solid black;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
-    flex-basis: 50%;
     background-color: aqua;
-
 }
+
 
