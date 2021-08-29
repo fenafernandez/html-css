@@ -1,34 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
 
-:root {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+:root {
     font-family: 'Allison' , cursive;  
+    text-overflow: ellipsis;
     --color-principal: #4177ff;
-    --color-secundario: #f37070;
+    --color-secundario: #faff65c2;
 }
 .dad {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: grid;
+    position: absolute;
     border: 10px solid black;
     background-color: var(--color-principal);
-    flex-basis: 100%;
+    font-size: 5rem;
+    text-align: center;
+    gap: 10% ;
+    height: 100vh ;
+    align-content: center;
     
-    font-size: 5em;
-    align-items:flex-start;
+    overflow-block: scroll;
     text-align: center;
 }
 
 .son {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    display: grid;
     border: 1px solid black;
     background-color: var(--color-secundario);
-    overflow-wrap: normal;
 }
-
-
-
