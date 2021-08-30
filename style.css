@@ -2,30 +2,45 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 :root {
     font-family: 'Allison' , cursive;  
-    text-overflow: ellipsis;
-    --color-principal: #4177ff;
+    --color-principal: #23a0d1a4;
     --color-secundario: #faff65c2;
 }
-.dad {
+
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+nav {
+    position: relative;
     display: grid;
-    position: absolute;
-    border: 10px solid black;
-    background-color: var(--color-principal);
-    font-size: 5rem;
-    text-align: center;
-    gap: 10% ;
-    height: 100vh ;
-    align-content: center;
-    
-    overflow-block: scroll;
-    text-align: center;
+    text-align: center ;
 }
 
-.son {
+.menu {
     display: grid;
-    border: 1px solid black;
-    background-color: var(--color-secundario);
+    position: relative;
+    width: 80vw;
+    height: 8vh;
+    border: 2px solid black;
+    background-color: rgba(20, 218, 175, 0.61);
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
 }
+.menu2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    text-shadow: 3px 3px 5px gray ;
+    border: 2px solid black;
+    background-color: rgba(20, 218, 175, 0.61);
+    margin: 5%;
+}
+
