@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -6,41 +7,63 @@
     padding: 0;
 }
 :root {
-    font-family: 'Allison' , cursive;  
+    font-family: 'roboto' , cursive;  
     --color-principal: #23a0d1a4;
     --color-secundario: #faff65c2;
 }
 
 body {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+    border: .3em solid black ;
 }
-nav {
+div {
     position: relative;
     display: grid;
-    text-align: center ;
 }
 
-.menu {
+h2 {
     display: grid;
     position: relative;
     width: 80vw;
-    height: 8vh;
-    border: 2px solid black;
+    height: 15vh;
+    border: 0.05em solid black;
     background-color: rgba(20, 218, 175, 0.61);
-    margin: auto;
     text-align: center;
-    font-size: 50px;
+    align-content: center;
+    margin: auto;
+}
+
+h2 span {
+    position: relative;
+    padding: 0.7rem;
+    font-size: xxx-large;
+    display: inline-grid;
+    align-content: space-around;
+
 }
 .menu2 {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
     position: relative;
-    text-shadow: 3px 3px 5px gray ;
+    /* text-shadow: 3px 3px 5px gray ; */
     border: 2px solid black;
     background-color: rgba(20, 218, 175, 0.61);
-    margin: 5%;
+    margin: 1%;
+    padding: 0%;
+    font-size: xx-large;
 }
 
+h3 {
+    justify-content: left;
+    display: inline-block;
+    font-size: 100px;
+}
+
+footer {
+    border: 10px solid black;
+}
